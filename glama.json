@@ -1,0 +1,6 @@
+{
+  "name": "HotelOracle",
+  "description": "Hotel Intelligence MCP \u2014 search, price compare, area guides, calendars",
+  "endpoint": "https://tooloracle.io/hotel/mcp/",
+  "transport": "streamable-http"
+}
