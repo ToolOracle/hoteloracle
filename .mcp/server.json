@@ -1,0 +1,11 @@
+{
+  "schema_version": "v2.0.0",
+  "name": "io.tooloracle/hoteloracle",
+  "description": "Hotel Intelligence MCP \u2014 search, price compare, area guides, calendars",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://tooloracle.io/hotel/mcp/"
+    }
+  ]
+}
