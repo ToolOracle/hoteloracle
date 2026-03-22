@@ -1,34 +1,69 @@
-# 🏨 HotelOracle
+# 🏨 hotelOracle
 
-**Hotel Intelligence MCP Server** — 8 tools | Part of [ToolOracle](https://tooloracle.io)
+**Travel MCP Server** — 8 tools | Part of [ToolOracle](https://tooloracle.io)
 
-## Connect
+![Tools](https://img.shields.io/badge/MCP_Tools-8-10B898?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Live-00C853?style=flat-square)
+![Tier](https://img.shields.io/badge/Tier-Free-2196F3?style=flat-square)
+
+## Quick Connect
+
 ```bash
+# Claude Desktop / Cursor / Windsurf
 npx -y mcp-remote https://tooloracle.io/hotel/mcp/
 ```
 
-## Tools
-`hotel_search` (5u) · `cheapest_hotels` (5u) · `hotel_details` (8u) · `price_compare` (8u) · `nearby_attractions` (5u) · `area_guide` (3u) · `hotel_prices_calendar` (10u) · `health_check` (free)
+```json
+// claude_desktop_config.json
+{
+  "mcpServers": {
+    "hoteloracle": {
+      "command": "npx",
+      "args": ["-y", "mcp-remote", "https://tooloracle.io/hotel/mcp/"]
+    }
+  }
+}
+```
 
-## Pricing (1 unit = $0.01)
-| Tier | Price | Units/Month |
-|------|-------|-------------|
-| Free | $0 | 50 |
-| Starter | $49/mo | 500 |
-| Pro | $149/mo | 2,000 |
-| Agency | $349/mo | 6,000 |
-| x402 | per call | unlimited |
+## Tools (8)
 
-## x402 Pay-per-Call
-Autonomous AI agents pay with USDC on Base via the x402 protocol.
-- Wallet: `0x4a4B1F45a00892542ac62562D1F2C62F579E4945`
-- Endpoint: `https://tooloracle.io/x402/hotel/mcp/`
+| Tool | Description |
+|------|-------------|
+| `hotel_search` | Search hotels in a city or area. Returns names, ratings, prices, amenities, and  |
+| `cheapest_hotels` | Find the cheapest hotels, sorted by lowest price. |
+| `hotel_details` | Deep details for a specific hotel: all amenities, reviews breakdown, images, eco |
+| `price_compare` | Compare prices for one hotel across booking sites (Booking.com, Hotels.com, Expe |
+| `nearby_attractions` | What is near a hotel: restaurants, landmarks, transit stations, distances. |
+| `area_guide` | Best neighborhoods to stay in a city. Compares areas by price, rating, and popul |
+| `hotel_prices_calendar` | Price trend for a specific hotel across different check-in dates. Find the cheap |
+| `health_check` | Server status, API connectivity, supported features. |
 
-## Backend
-SerpAPI Google Hotels (via SerpAPI)
+## Pricing
+
+| Tier | Rate Limit | Price |
+|------|-----------|-------|
+| Free | 100 calls/day | €0 |
+| Pro | 10,000 calls/day | €29/month |
+| Enterprise | Unlimited | Custom |
+
+> Free tier includes all tools with rate limiting. Upgrade for higher limits and priority support.
 
 ## Part of ToolOracle
-[tooloracle.io](https://tooloracle.io) — 7 products, 65 tools, all MCP-native.
 
-## License
-MIT
+hotelOracle is one of **42 specialized MCP servers** in the [ToolOracle](https://tooloracle.io) ecosystem — the largest collection of production-ready MCP tools for AI agents.
+
+
+
+**Related Oracles:**
+- [FeedOracle](https://feedoracle.io) — Evidence-grade compliance data infrastructure
+- [ToolOracle](https://tooloracle.io) — 42 Oracles, 390+ MCP Tools
+
+## Links
+
+- 🌐 Live: `https://tooloracle.io/hotel/mcp/`
+- 📚 Docs: [tooloracle.io/docs](https://tooloracle.io/docs)
+- 🏠 Platform: [tooloracle.io](https://tooloracle.io)
+
+---
+
+*Built by [FeedOracle](https://feedoracle.io) — Evidence by Design*
