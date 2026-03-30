@@ -1,6 +1,14 @@
 {
   "name": "HotelOracle",
-  "description": "Hotel Intelligence MCP \u2014 search, price compare, area guides, calendars",
+  "description": "Hotel Intelligence \u2014 search, pricing, reviews, availability, destination info via MCP",
+  "repository": "https://github.com/ToolOracle/hoteloracle",
   "endpoint": "https://tooloracle.io/hotel/mcp/",
-  "transport": "streamable-http"
+  "tools": 8,
+  "license": "MIT",
+  "author": "FeedOracle Technologies",
+  "tags": [
+    "travel",
+    "mcp",
+    "ai-agent"
+  ]
 }
